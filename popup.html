@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        body {
+            width: 500px;
+            height: 60px;
+            font-family: Arial, sans-serif, 'proxima-nova';
+            color: #777;
+        }
+
+/*        input {
+            width: 50px;
+
+        }*/
+    </style>
+    <link rel="stylesheet" href="Pure/pure-nr-min.css">
+</head>
+<body>
+<h3 style="text-align: center">Linkedin Profile Viewer</h3>
+
+<form class="pure-form pure-form-aligned">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="keywords" style="width: 11em">
+                Keywords:
+            </label><input id="keywords"
+                           placeholder="Keywords"
+                           value=""
+                           class=""
+                           size="50"></div>
+        <div class="pure-control-group">
+            <label for="titles" style="width: 11em">
+                Job Titles:
+            </label><input id="titles"
+                           placeholder="Job Titles"
+                           value=""
+                           class=""
+                           size="50"></div>
+        <div class="pure-control-group">
+            <label for="industries" style="width: 11em">
+                Industry Codes:
+            </label><input id="industries"
+                           placeholder="Industry Codes"
+                           value=""
+                           class=""
+                           size="50"></div>
+        <div class="pure-control-group">
+            <label for="postalcodes" style="width: 11em">
+                Zip Codes (USA Only):
+            </label><input id="postalCodes"
+                           placeholder="ZIP Codes"
+                           value=""
+                           class=""
+                           size="50"></div>
+        <div class="pure-control-group">
+            <label for="radius" style="width: 11em">
+            	ZIP Radius:
+            </label><input id="radius"
+                           placeholder="Radius to Search"
+                           value="1"
+                           class=""
+                           size="3"></div>
+        <div class="pure-control-group">
+            <label for="startTime" style="width: 11em">
+            	Start Hour of Day (24H):
+            </label><input id="startTime"
+                           placeholder="Start Hour of Day"
+                           value="9"
+                           class=""
+                           size="3"></div>
+        <div class="pure-control-group">
+            <label for="endTime" style="width: 11em">
+                End Hour of Day (24H):
+            </label><input id="endTime"
+                           placeholder="End Hour of Day"
+                           value="17"
+                           class=""
+                           size="3"></div>
+        <div class="pure-control-group">
+            <label for="min" style="width: 11em">
+                Minimum Delay Minute:
+            </label><input id="min"
+                           placeholder="Minimum Minutes to Wait"
+                           value="2"
+                           class=""
+                           size="3"></div>
+        <div class="pure-control-group">
+            <label for="max" style="width: 11em">
+                Maximum Delay Minute:
+            </label><input id="max"
+                           placeholder="Maximum Minutes to Wait"
+                           value="5"
+                           class=""
+                           size="3"></div>
+        <button id="start" class="pure-button pure-button-primary" style="margin-left: 40px">Start</button>
+        <button id="stop" class="pure-button pure-button-primary" style="margin-left: 30px">Stop</button>
+
+<p>&nbsp;</p>
+        <div class="pure-control-group">
+            <label for="log" style="width: 11em">
+                Log:
+            </label><textarea id="log"
+                           placeholder="log"
+                           value=""
+                           class=""
+                           cols="50"
+                           rows="10"></textarea></div>
+    </fieldset>
+</form>
+<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="popup.js"></script>
+</body>
+</html>

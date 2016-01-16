@@ -1,0 +1,20 @@
+{
+    "name": "LinkedInProfileViewer",
+    "description": "LinkedIn Profile Viewer",
+    "version": "1.0.0",
+    "manifest_version": 2,
+
+    "background": {
+        "scripts": ["jquery-2.0.3.min.js","background.js"]
+    },
+    "permissions": ["*://*/*", "storage", "tabs", "alarms"],
+    "icons": {
+        "128": "logo.png"
+    },
+    "browser_action": {
+        "default_icon": "logo.png",
+        "default_title": "linkedIn",
+        "default_popup": "popup.html"
+    }
+
+}
